@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forms</title>
+</head>
+<style>
+    h2{
+        text-align: center;
+        color: red;
+        padding: 10px;
+        font-family: "DejaVu Sans Mono";
+        margin: 2px;
+    }
+    form{
+        text-align: center;
+        padding: 10px;
+        margin: 2px;
+        color: midnightblue;
+        
+    }
+    gender{
+        color: red;
+    }
+</style>
+
+<body>
+<h2>REGISTRATION FORM</h2>
+<form action="iframe.html">
+    <label for="FName">First Name</label>
+    <input type="text"id="FName"placeholder="Enter first name"><br>
+    <label for="LName">Last Name</label>
+    <input type="text"id="LName"placeholder="Enter Last Name"><br>
+    <label for="dor">Date of registration</label>
+    <input type="date"id="dor"><br>
+    <label for="course">Course Taken</label>
+    <select name="corse" id="course">
+        <option value="Fullstack Software">Fullstack</option>
+        <option value="Python">Python</option>
+        <option value="Javascript">Javascript</option>
+        <option value="Android">Android</option>
+        <option value="css">css</option>
+        <option value="HTML">HTML</option>
+        <option value="Java">Java</option>
+        <option value="Bootstrap">Bootstrap</option>
+    </select><br>
+    gender <br>
+    <label for="male">Male</label>
+    <input type="radio"id="male" name="gender">
+    <label for="female">Female</label>
+    <input type="radio"id="female"name="gender">
+    <label for="others">Others</label>
+    <input type="radio"id="others"name="gender"><br>
+    <label for="email">email address</label>
+    <input type="email"id="email"placeholder="Enter Email Address"><br>
+    <label for="pass">password</label>
+    <input type="password" id="pass"placeholder="Input Password"><br>
+    <input type="submit" value="Register here"><br>
+    <label for="Upload Image">image</label>
+    <input type="file"placeholder="input image">
+    <button type="button"onclick="alert('This is how to work with forms')">Bonyeza hapa</button>
+</form>
+
+</body>
+</html>
